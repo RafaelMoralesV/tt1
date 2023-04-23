@@ -1,44 +1,71 @@
 % Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-% \usepackage{lscape}
+% \usepackage{booktabs}
+% \usepackage{graphicx}
 \begin{table}[H]
-	\tiny
-	\begin{tabular}{llllllll}
-		\rowcolor[HTML]{CBCEFB}
-		\multicolumn{2}{l}{\cellcolor[HTML]{CBCEFB}\textbf{Actividad}} &
-		\multicolumn{2}{l}{\cellcolor[HTML]{CBCEFB}\textbf{Fecha}}     &
-		\multicolumn{2}{l}{\cellcolor[HTML]{CBCEFB}\textbf{Duración}}  &
-		\multicolumn{2}{l}{\cellcolor[HTML]{CBCEFB}\textbf{Porcentajes}}                                                                                                                        \\
-		\rowcolor[HTML]{CBCEFB}
-		\textbf{Nro.}                                                  &
-		\textbf{Nombre}                                                &
-		\textbf{Inicio}                                                &
-		\textbf{Término}                                               &
-		\textbf{Días}                                                  &
-		\textbf{Horas}                                                 &
-		\textbf{HH Acum}                                               &
-		\textbf{Avance}                                                                                                                                                                         \\
-		\rowcolor[HTML]{CBCEFB}
-		\multicolumn{8}{c}{\cellcolor[HTML]{CBCEFB}\textbf{Trabajo de Título I}}                                                                                                                \\
-		\rowcolor[HTML]{DAE8FC}
-		\textbf{E0}                                                    & \textbf{Inicio y Anteproyecto}               & \textbf{}  & \textbf{}  & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-		0-1                                                            & Objetivos                                    &            &            &           &           &           &           \\
-		0-2                                                            & Álcances y Limitaciones                      &            &            &           &           &           &           \\
-		0-3                                                            & Recursos                                     &            &            &           &           &           &           \\
-		0-4                                                            & Metodología                                  &            &            &           &           &           &           \\
-		0-5                                                            & Estructura                                   &            &            &           &           &           &           \\
-		0-6                                                            & Plan de Trabajo                              &            &            &           &           &           &           \\
-		\rowcolor[HTML]{ECF4FF}
-		H0                                                             & Hito 0: Entrega de Anteproyecto              & 27/04/2023 & 27/04/2023 & 1         & 1         &           &           \\
-		\rowcolor[HTML]{DAE8FC}
-		\textbf{E1}                                                    & \textbf{Propuesta e Investigación}           & \textbf{}  & \textbf{}  & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-		1-1                                                            & Creación y elaboración de visión de producto &            &            &           &           &           &           \\
-		1-2                                                            & Investigación del estado del Arte            &            &            &           &           &           &           \\
-		1-3                                                            & Elaboración de diagrama comparativo          &            &            &           &           &           &           \\
-		\rowcolor[HTML]{ECF4FF}
-		H1                                                             & Hito 1: Entrega de Avance 1                  &            &            &           &           &           &           \\
-		\rowcolor[HTML]{DAE8FC}
-		\textbf{E2}                                                    & \textbf{Evaluación y Validación}             & \textbf{}  & \textbf{}  & \textbf{} & \textbf{} & \textbf{} & \textbf{}
-	\end{tabular}
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}llllllll@{}}
+			\toprule
+			\multicolumn{2}{l}{\textbf{Actividad}}             &
+			\multicolumn{2}{l}{\textbf{Fecha}}                 &
+			\multicolumn{2}{l}{\textbf{Duración}}              &
+			\multicolumn{2}{l}{\textbf{Porcentajes}}                                                                                                                               \\ \midrule
+			\textbf{\#}                                        &
+			\textbf{Nombre}                                    &
+			\textbf{Inicio}                                    &
+			\textbf{Término}                                   &
+			\textbf{Días}                                      &
+			\textbf{Horas}                                     &
+			\textbf{HH Acum}                                   &
+			\textbf{Avance}                                                                                                                                                        \\ \midrule
+			\multicolumn{8}{c}{Trabajo de Título I}                                                                                                                                \\ \midrule
+			\textit{H0}                                        & \textit{Inicio del proyecto}                        & \multicolumn{2}{c}{\textit{12/4/2023}}       &  &  &  &     \\
+			1                                                  & Objetivos                                           &                                              &  &  &  &   & \\
+			2                                                  & Alcances y Limitaciones                             &                                              &  &  &  &   & \\
+			3                                                  & Recursos                                            &                                              &  &  &  &   & \\
+			4                                                  & Metodología                                         &                                              &  &  &  &   & \\
+			5                                                  & Estructura                                          &                                              &  &  &  &   & \\
+			6                                                  & Plan de Trabajo                                     &                                              &  &  &  &   & \\
+			\textit{H1}                                        & \textit{Entrega de Anteproyecto}                    & \multicolumn{2}{c}{\textit{24/04/2023}}      &  &  &  &     \\
+			7                                                  & Identificación de Stakeholders                      &                                              &  &  &  &   & \\
+			8                                                  & Entrevista con stakeholders                         &                                              &  &  &  &   & \\
+			9                                                  & Definición de requerimientos de datos               &                                              &  &  &  &   & \\
+			10                                                 & Definición de requerimientos de seguridad           &                                              &  &  &  &   & \\
+			\textit{E1}                                        & \textit{Análisis y levantamiento de requerimientos} &                                              &  &  &  &   & \\
+			\textit{H2}                                        & \textit{Entrega informe de Avance I}                & \multicolumn{2}{c}{\textit{22/05/2023}}      &  &  &  &     \\
+			11                                                 & Estado del arte                                     &                                              &  &  &  &   & \\
+			12                                                 & Modelado de la arquitectura                         &                                              &  &  &  &   & \\
+			13                                                 & Definición de componentes de la estructura          &                                              &  &  &  &   & \\
+			\textit{E2}                                        & \textit{Diseño inicial de la solución}              &                                              &  &  &  &   & \\
+			\textit{H3}                                        & \textit{Entrega informe de Avance II}               & \multicolumn{2}{c}{\textit{25/06/2023}}      &  &  &  &     \\
+			14                                                 & Creación de un ambiente de prueba                   &                                              &  &  &  &   & \\
+			15                                                 & Integración de la arquitectura planificada          &                                              &  &  &  &   & \\
+			\textit{H4}                                        & \textit{Entrega informe final de Avance}            & \multicolumn{2}{c}{\textit{10/7/2023}}       &  &  &  &     \\ \midrule
+			\multicolumn{8}{c}{Trabajo de Título II}                                                                                                                               \\ \midrule
+			16                                                 & Pruebas unitarias                                   &                                              &  &  &  &   & \\
+			\textit{E3}                                        & \textit{Desarrollo}                                 &                                              &  &  &  &   & \\
+			\textit{H5}                                        & \textit{Entrega informe de Avance I}                & \multicolumn{2}{c}{\textit{Septiembre 2023}} &  &  &  &     \\
+			17                                                 & Integración de sistema a procesos existentes        &                                              &  &  &  &   & \\
+			\textit{E4}                                        & \textit{Implementación}                             &                                              &  &  &  &   & \\
+			18                                                 & Pruebas funcionales                                 &                                              &  &  &  &   & \\
+			19                                                 & Pruebas de carga                                    &                                              &  &  &  &   & \\
+			20                                                 & Pruebas de seguridad                                &                                              &  &  &  &   & \\
+			\textit{E5}                                        & \textit{Pruebas y Validación}                       &                                              &  &  &  &   & \\
+			\textit{H6}                                        & \textit{Entrega informe de Avance II}               & \multicolumn{2}{c}{\textit{Octubre 2023}}    &  &  &  &     \\
+			21                                                 & Entrega de producto / MVP a usuarios                &                                              &  &  &  &   & \\
+			22                                                 & Capacitación de usuarios                            &                                              &  &  &  &   & \\
+			23                                                 & Evaluación de procesos, decisiones y resultados     &                                              &  &  &  &   & \\
+			\textit{E6}                                        & \textit{Cierre del proyecto}                        &                                              &  &  &  &   & \\
+			\textit{H7}                                        &
+			\textit{Entrega Informe final y Resumen Ejecutivo} &
+			\multicolumn{2}{c}{Noviembre 2023}                 &
+			                                                   &
+			                                                   &
+			                                                   &
+			\\
+			\textit{H8}                                        & \textit{Examen de Título}                           & \multicolumn{2}{c}{\textit{Noviembre 2023}}  &  &  &  &     \\ \bottomrule
+		\end{tabular}%
+	}
+	\caption{Cronograma General del Proyecto}
+	\label{tab:cronograma}
 \end{table}
