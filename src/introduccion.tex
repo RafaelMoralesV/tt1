@@ -9,9 +9,50 @@ En la actualidad, el volumen de datos que se produce en la variedad de organizac
 
 El presente informe de avance presenta el progreso del proyecto de centralización y monitoreo de logs, cuyo principal objetivo consta de implementar un sistema de recopilación, almacenamiento y análisis, de manera centralizada, de los logs de los diversos sistemas que posee UTEM como institución. Se espera que este sistema ayude a considerablemente a la gestión de los registros de manera más eficiente, así como facilitar la detección temprana de fallos y problemas que estos presenten.
 
+El problema con el que se cuenta hoy en día es una alta variedad de formatos y lugares desde los cuales obtener estos archivos de trazabilidad. Los principales sistemas que tiene la universidad son SIGA, AMANDA, SIGEDI y SISAV\footnote{En orden, estos son los sistemas para: \quotes{Gestión Académica}, \quotes{Administración y Finanzas}, \quotes{Investigación y Posgrado} y \quotes{VcM, TT y Extensión}.}, correspondientes a varios de los sistemas informáticos más importantes de la universidad, y que sirven a las diversas Vicerrectorías de la universidad (VRAC, VRAF, VIP y VTTE, respectivamente)\footnote{En orden, \quotes{Vicerrectoría Académica}, \quotes{Vicerrectoría de Administración y Finanzas}, \quotes{Vicerrectoría de Investigación y Posgrado}, y \quotes{Vicerrectoría de Transferencia tecnológica y extensión}.}.
+
 % TODO: Respaldar esto en la sección de progreso
 En esta estapa inicial de proyecto se ha realizado una investigación sobre mejores prácticas y tecnologías disponibles en el campo de la gestión de logs. Se propone una arquitectura inicial que abarca desde la recolección de logs desde diversas aplicaciones y sistemas hasta su posterior análisis en un único sistema centralizado.
 
-Se espera que, conforme se avance en el proyecto, se encuentren desafíos adicionales, como la normalización y el enriquecimiento de estos logs, así como el diseño de un panel de búsqueda e información que sea realmente útil para los propósitos de SISEI.
+Se espera que, conforme se avance en el proyecto, se encuentren desafíos adicionales, como la normalización y el enriquecimiento de estos logs, así como el diseño de un panel de búsqueda e información que sea realmente útil para los propósitos de SISEI. Bajo esto, el objetivo último de este proyecto busca solucionar estos dos problemas; conseguir un punto centralizado para estos logs, y crear una plataforma que convierta todos estos datos en información que pueda acompañar a las decisiones futuras del departamento.
+
+\clearpage
+
+\section{Objetivos}
+\subsection{Objetivo General}
+
+Modernizar y centralizar en una única plataforma el acceso a los logs y datos de trazabilidad de los sistemas principales de la universidad, con el fin de mejorar la toma de decisiones, habilitando que esta sea basada en datos e información adquirible del producto de este proyecto.
+
+\subsection{Objetivos Específicos}
+
+\begin{itemize}
+	\item Crear un modelo de la situación actual, sobre el cual se puedan comparar los cambios propuestos.
+	\item Generar un análisis de mercado y estado del arte sobre alternativas y soluciones que se hayan empleado para problemas similares o idénticos, y el cómo fueron estos proyectos llevados a cabo.
+	\item Hacer pruebas de concepto y viabilidad de las distintas arquitecturas consideradas.
+	\item En base a las pruebas, implementar esta arquitectura elegida sobre los sistemas principales de la Universidad.
+	\item Generar y esparcir el conocimiento de uso de esta nueva plataforma sobre los usuarios y stakeholders del proyecto, principalmente el área de desarrollo y mantención de sistemas informáticos.
+\end{itemize}
+
+\clearpage
+
+\section{Alcances y limitaciones}
+
+Se plantea a continuación los alcances y limitaciones de este proyecto:
+
+\subsection{Alcances}
+
+\begin{itemize}
+	\item La solución a implementar debe contemplar, salvo breves excepciones, los cuatro sistemas informáticos mencionados (SIGA, AMANDA, SIGEDI y SISAV), además de la intranet institucional Mi UTEM.
+	\item Deberá mejorar la eficiencia y productividad en cuanto al acceso de estos datos, sea por \textit{debug} o por estudio de los mismos.
+	\item El proyecto debe apuntar a generar un producto o solución que ayude en la toma de decisiones informadas por parte de SISEI.
+\end{itemize}
+
+\subsection{Limitaciones}
+\begin{itemize}
+	\item Limitaciones técnicas, en términos de hardware insuficiente, incompatibilidad de software, entre otros, que deben ser superadas durante el proyecto.
+	\item Resistencia al cambio por parte del equipo de SISEI u otros, de acuerdo a cómo sean intervenidos los procesos.
+	\item Problemas de seguridad, pues los datos que se manejan pueden ser de extrema sensibilidad. Se necesitarán políticas y procedimientos claros para la gestión y acceso de estos datos.
+	\item Limitaciones de recursos, principalmente de tiempo. Se debe mantener un alto ojo al alcance de este proyecto conforme avanza.
+\end{itemize}
 
 \clearpage
