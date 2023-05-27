@@ -6,6 +6,18 @@
 
 \section{Descripción del Sistema propuesto}
 
-\clearpage
+Debido a la gran cantidad de paralelismos que existe entre este tipo de proyectos, y un sistema de Business Intelligence (BI) común, podemos empezar a describir el primero en los términos del último.
 
-% -------------------- Anterior ------------------- %
+\insertimage[\label{img:sistema_BI}]{assets/Sistema Propuesto.png}{width=\textwidth}{Sketch de un sistema de Business Intelligence en el contexto del proyecto de centralización de Logs}
+
+El proceso de Business Intelligence consta de 4 componentes simples:
+
+\begin{enumerate}
+  \item Una fuente de datos inicial, que sería representado por las bases de datos de Logs de SISEI (AMANDA, SIGA, etc...).
+  \item Un proceso de ETL, o de 'Extract, Transform and Load' (Extraer, Transformar y Cargar), en donde los datos de las fuentes son procesados para seguir un formato, calidad y precisión mínimo con el que se puede trabajar.
+  \item Data Warehouse, que corresponde al sitio centralizado donde se guardarán estos logs. En el caso del proyecto, podemos pensar en una base de datos orientada a eventos, que permita un acceso eficiente y busqueda de registros.
+  \item Con los datos centralizados, es posible extraer información al relacionar eventos y generar tendencias, detectar patrones y buscar anomalias, lo que puede ayudar a detectar problemas y mejorar la seguridad y rendimiento de estos sistemas.
+  \item Informes, visualización y alertas pueden ser generadas conforme el sistema sea establecido e implementado paneles de control interactivos que muestren métricas y estadísticas relevantes.
+\end{enumerate}
+
+\clearpage
