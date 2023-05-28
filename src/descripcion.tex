@@ -50,6 +50,8 @@ En un inicio, el stack ELK consistía de las herramientas Elasticsearch, Logstas
 
 Si bien el stack ELK es una solución popular y ampliamente utilizada para la centralización y análisis de logs, existen algunas consideraciones y escenarios en los que podría no ser la mejor opción o en los que otras herramientas podrían ser más adecuadas. A continuación, mencionaré algunas razones por las cuales podrías considerar alternativas al stack ELK:
 
+\insertimage[\label{img:ES_I}]{assets/Elastic Stack I.png}{width=\textwidth}{Diagrama del uso de Elastic Stack, elaborado por David Taylor. \cite{Taylor_2023}}
+
 \begin{enumerate}
 \item \textbf{Requerimientos de rendimiento y escala:} En situaciones en las que se maneje un volumen extremadamente alto de logs o se necesite un procesamiento en tiempo real a gran escala, el stack ELK podría no ser la mejor opción. En estos casos, se podrían explorar soluciones como Apache Kafka, Apache Flink o Apache Spark, que están diseñadas específicamente para procesamiento de datos en tiempo real a gran escala.
 
@@ -59,7 +61,7 @@ Si bien el stack ELK es una solución popular y ampliamente utilizada para la ce
 
 \item \textbf{Soporte y asistencia técnica:} Dependiendo de las necesidades y la disponibilidad de recursos internos, es relevante considerar el soporte y la asistencia técnica ofrecidos por las diferentes soluciones. Algunas herramientas comerciales, como Splunk, pueden proporcionar un nivel más alto de soporte y servicios profesionales en comparación con el stack ELK de código abierto.
 
-\item \textbf{Casos de uso específicos:} En caso de tener requisitos específicos o necesidades especializadas en términos de análisis de logs, cumplimiento normativo, seguridad, correlación de eventos, entre otros, podrían existir soluciones especializadas que se adapten mejor. Por ejemplo, herramientas como LogRhythm, QRadar o ArcSight ofrecen capacidades avanzadas de seguridad y análisis de logs.
+\item \textbf{Casos de uso específicos:} En caso de tener requisitos específicos o necesidades especializadas en términos de análisis de logs, cumplimiento normativo, seguridad, correlación de eventos, entre otros, podrían existir soluciones especializadas que se adapten mejor. Por ejemplo, herramientas como LogRhythm, QRadar o ArcSight ofrecen capacidades avanzadas de seguridad y análisis de logs. 
 
 \end{enumerate}
 
