@@ -1,36 +1,29 @@
 \section{Progreso realizado}
 
-Para este segundo hito, según lo marcado en el cronograma inicial (ver tabla \ref{tab:cronograma}), esta primera etapa debería ser principalmente una toma de requerimientos. La viablididad de estas tareas se vio altamente afectada, lamentablemente, por el contexto actual y común de SISEI, por lo que la realización de entrevistas no pudo ser llevado a cabo. Bajo esto, se realizó un cambio en el enfoque del primer avance, desde uno de toma de requerimientos a uno principalmente investigativo en naturaleza, según se ve en el capítulo \ref{section:descripcion}.
+Este avance pretende mejorar la toma de requerimientos de la solución de software, y expandir la parte investigativa del proyecto en razón de los cambios que esta pudiera presentar.
 
-Sin embargo, se creó un documento con notas de los requerimientos más básicos que se deben respetar en este proyecto:
+En primera instancia, se generó en un momento un documento inicial de toma de requerimientos según el poco conocimiento de los problemas a nivel específico de las diversas áreas de SISEI (Encontrable en la sección \ref{anexos:requerimientos}). Debido a una última y reciente reunión con las áreas de infraestructura y desarrollo, esta toma de requerimientos puede ser expandida de la siguiente manera:
 
 \begin{enumerate}
-  \item \textbf{Requerimientos Funcionales:} 
+  \item \textbf{Para el área de desarrollo: }
     \begin{itemize}
-      \item Capacidad de procesar y analizar grandes volúmenes de logs.
-      \item Interfaz de usuario amigable, intuitivo.
-      \item Seguridad adecuada para los datos almacenados
-      \item Recopilación de datos de distintos sistemas
-      \item Almacenamiento de datos centralizado
-      \item Monitoreo a tiempo real
-      \item Alertas y notificaciones en caso de problemas
-      \item Informes y estadísticas estilo BI
-      \item Escalabilidad para futuras necesidades
-      \item Integración plena con los sistemas existentes universitarios
-      \item Mantenible a lo largo del tiempo
-      \item Debe mantener trazabilidad de uso, quien se loguea, cuando, etc.
-        \begin{itemize}
-          \item Bajo esta idea, cada usuario debe ser distinto, un usuario comodin 'equipo SISEI' derrota el propósito.
-        \end{itemize}
+      \item Debe poder acceder a la base de datos de desarrollo y extraer los logs desde la tabla \quotes{general.log\_error}.
+      \item Debe extraer los logs desde esta tabla, y transformarlos hacia un formato concreto (por especificar) al momento de almacenarlos en el servidor centralizado.
+      \item Eliminar, apartar, o de alguna forma organizar las trazas automáticas (generadas por trabajos de CRON\footnote{Daemon de Linux para ejecutar comandos programados (Vixie Cron) - Man page of CRON}) para que no intervengan o molestan al momento de analizar errores de desarrollo.
+        \item Se debe establecer una serie de categorías de Logs para esta zona, como por ejemplo:
+          \begin{itemize}
+            \item Logs de Acceso.
+            \item Logs automáticos CRON.
+            \item Logs de desarrollo.
+          \end{itemize}
     \end{itemize}
-  \item \textbf{Requerimientos No Funcionales:} 
-    \begin{itemize}
-      \item Debe saber recuperarse en caso de perder conectividad (Cortes de luz, fallos de internet, etc).
-      \item Debe ser accedible en la mayor cantidad de disposivos.
-      \item Implementación de autenticación y autorización para controlar acceso a la plataforma.
-      \item Respaldo y recuperación de datos para garantizar la disponibilidad y evitar la pérdida de información crítica.
-    \end{itemize}
+    \item \textbf{Para el área de infraestructura: }
+      \begin{itemize}
+        \item Debe ser capaz de conectarse y extraer logs en formatos de archivos desde todos los servidores\footnote{Academia, Amanda, MiUtem, Siga y Sigedi}.
+        \item Tiene que extraer la información desde dos formatos: texto plano, y GNU Zipped Archive (archivos terminados en .gz).
+          \item Debido a la naturaleza de ser de múltiples herramientas distintas, debe ser capaz de transformar todos estos logs a un formato común.
+          \item Debería poder obtener logs desde SystemD Journal para el proceso de Unicorn. Normalmente obtenido desde el comando \quotes{journalctl -u gunicorn}.\footnote{Es posible que estos logs estén repetidos en la base de datos de desarrollo.}
+      \end{itemize}
 \end{enumerate}
-
 
 \clearpage
