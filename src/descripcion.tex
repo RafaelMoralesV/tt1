@@ -1,63 +1,6 @@
 \section{Descripción del Sistema propuesto}
 \label{section:descripcion}
 
-\subsection{Similitudes con Business Intelligence}
 
-Debido a la gran cantidad de paralelismos que existe entre este tipo de proyectos, y un sistema de Business Intelligence (BI) común, podemos empezar a describir el primero en los términos del último.
-
-\insertimage[\label{img:sistema_BI}]{assets/Sistema Propuesto.png}{width=\textwidth}{Sketch de un sistema de Business Intelligence en el contexto del proyecto de centralización de Logs}
-
-El proceso de Business Intelligence consta de 4 componentes simples:
-
-\begin{enumerate}
-  \item Una fuente de datos inicial, que sería representado por las bases de datos de Logs de SISEI (AMANDA, SIGA, etc...).
-  \item Un proceso de ETL, o de 'Extract, Transform and Load' (Extraer, Transformar y Cargar), en donde los datos de las fuentes son procesados para seguir un formato, calidad y precisión mínimo con el que se puede trabajar.
-  \item Data Warehouse, que corresponde al sitio centralizado donde se guardarán estos logs. En el caso del proyecto, podemos pensar en una base de datos orientada a eventos, que permita un acceso eficiente y busqueda de registros.
-  \item Con los datos centralizados, es posible extraer información al relacionar eventos y generar tendencias, detectar patrones y buscar anomalias, lo que puede ayudar a detectar problemas y mejorar la seguridad y rendimiento de estos sistemas.
-  \item Informes, visualización y alertas pueden ser generadas conforme el sistema sea establecido e implementado paneles de control interactivos que muestren métricas y estadísticas relevantes.
-\end{enumerate}
-
-\subsection{Sobre las tecnologías}
-
-La recomendación inicial con la que partió el proyecto se armó en base del stack ELK, que es una combinación de Elasticsearch, Logstash y Kibana, que proporciona una solución integral para la centralización, procesamiento y visualización de logs, incluyendo funcionalidades de seguridad. Todas estas herramientas son creadas por la misma organización, y son dispuestas como código abierto.
-
-Cualquier nueva tecnología a considerar tiene que poder superar la facilidad de integración de herramientas que tiene este stack por si mismo, al igual que ser gratuito de la misma forma que lo es el stack. Finalmente, debe encontrar un beneficio que el stack no provea, por lo que genera pocas opciones a considerar.
-
-Sin embargo, es necesario mantener alternativas, pues es totalmente posible que el stack ELK no cumpla los requerimientos que tenga SISEI, o no sea posible implementarlo por alguna u otra razón.
-
-\subsubsection{Stack ELK}
-
-En un inicio, el stack ELK consistía de las herramientas Elasticsearch, Logstash y Kibana, pero adicionalmente fue agregado Beats, por la misma compañía Elastic. Hoy en día el stack es reconocido como un conjunto en sí mismo, por lo que Elastic lo ofrece de manera gratuita bajo el nombre de producto Elastic Stack. Adicionalmente, Elastic ofrece servicios de almacenamiento, suscripción, soporte y otros de manera pagada.
-
-\begin{itemize}
-  \item \textbf{Elasticsearch} es un motor de busqueda y análisis distribuiudo y escalable,. Es el componente central del stack ELK y se utiliza para almacenar y buscar datos a tiempo real, incluyendo logs. Esta herramienta usa estructura de índices invertidos para almacenar y buscar datos rápidamente, organizando los datos en clústeres y nodos para lograr una alta disponibilidad y escalabilidad. Adicionalmente, es posible escalar de manera horizontal según crezca la carga de trabajo.
-  \item \textbf{Logstash} es una herramienta de procesamiento y transformación de datos que se utiliza para la ingestión de logs y otros tipos de datos en Elasticsearch. Esta herramienta puede recibir datos de diferentes fuentes, sean archivos de logs, bases de datos, sistemas de mensajes, APIs, etc. Además de extraerlos, puede filtrar, enriquecer, transformar y normalizar estos datos. Puede enrutar estos datos a varios destinos, aunque Elasticsearch es normalmente el más común.
-  \item \textbf{Kibana} es una plataforma de visualización y análisis de datos que se integra con Elasticsearch para proporcionar una interfaz amigable y potente. Esta ofrece una amplia gama de opciones para visualizar los datos almacenados, incluyendo gráficos, mapas, tablas, diagramas de dispersión y otros. Kibana permite crear cuadros de mando personalizados e interactivos que combinan múltiples visualizaciones en una sola pantalla.
-  \item \textbf{Beats} es el integrante más nuevo del stack ELK, que consta de una colección de agentes ligeros y autónomos, utilizados para la recolección de datos y envío de los mismos hacia plataformas Elasticsearch o Logstash. Es el complemento final que permite recopilar datos de diversas fuentes y enviarlos para su procesamiento y análisis. Los beats más interesantes para el proyecto serían:
-  \begin{itemize}
-    \item \textbf{Filebeat}, para recolección de logs y archivos de registros de diferentes fuentes. Para el caso, es el menos relevante, pues la gran mayoría de logs de los sistemas de SISEI se encuentran en bases de datos.
-    \item \textbf{Metricbeat}, encargado de recopilación y envío de métricas del sistema y servicio. Monitoriza el rendimiento de servidores, aplicaciones y otros servicios, y envía estas métricas directo al stack para su análisis y visualización.
-    \item \textbf{Packetbeat} está diseñado para capturar y analizar datos de la red en tiempo real. Examina tráfico de red y extrae información sobre las transacciones y comunicaciones que ocurren en la red.
-  \end{itemize}
-\end{itemize}
-
-\subsubsection{Alternativas a ELK}
-
-Si bien el stack ELK es una solución popular y ampliamente utilizada para la centralización y análisis de logs, existen algunas consideraciones y escenarios en los que podría no ser la mejor opción o en los que otras herramientas podrían ser más adecuadas. A continuación, mencionaré algunas razones por las cuales podrías considerar alternativas al stack ELK:
-
-\insertimage[\label{img:ES_I}]{assets/Elastic Stack I.png}{width=\textwidth}{Diagrama del uso de Elastic Stack, elaborado por David Taylor. \cite{Taylor_2023}}
-
-\begin{enumerate}
-\item \textbf{Requerimientos de rendimiento y escala:} En situaciones en las que se maneje un volumen extremadamente alto de logs o se necesite un procesamiento en tiempo real a gran escala, el stack ELK podría no ser la mejor opción. En estos casos, se podrían explorar soluciones como Apache Kafka, Apache Flink o Apache Spark, que están diseñadas específicamente para procesamiento de datos en tiempo real a gran escala.
-
-\item \textbf{Complejidad y recursos:} La configuración y el mantenimiento del stack ELK pueden ser complejos, especialmente en despliegues a gran escala. Además, se requieren recursos significativos en términos de hardware y almacenamiento. Si existen limitaciones de recursos o se busca una solución más liviana y fácil de administrar, se podrían considerar alternativas más sencillas como Graylog, Fluentd o Splunk.
-
-\item \textbf{Integración con otras herramientas y sistemas:} Si ya se utilizan otras herramientas de monitoreo o gestión de logs en la infraestructura, es importante considerar la compatibilidad y la facilidad de integración entre el stack ELK y esas herramientas. Otras soluciones como Datadog, New Relic o Sumo Logic podrían ofrecer una mejor integración con los sistemas existentes.
-
-\item \textbf{Soporte y asistencia técnica:} Dependiendo de las necesidades y la disponibilidad de recursos internos, es relevante considerar el soporte y la asistencia técnica ofrecidos por las diferentes soluciones. Algunas herramientas comerciales, como Splunk, pueden proporcionar un nivel más alto de soporte y servicios profesionales en comparación con el stack ELK de código abierto.
-
-\item \textbf{Casos de uso específicos:} En caso de tener requisitos específicos o necesidades especializadas en términos de análisis de logs, cumplimiento normativo, seguridad, correlación de eventos, entre otros, podrían existir soluciones especializadas que se adapten mejor. Por ejemplo, herramientas como LogRhythm, QRadar o ArcSight ofrecen capacidades avanzadas de seguridad y análisis de logs. 
-
-\end{enumerate}
 
 \clearpage
