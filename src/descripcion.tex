@@ -1,6 +1,20 @@
 \section{Descripción del Sistema propuesto}
 \label{section:descripcion}
 
+A continuación se propone un modelo formal de arquitectura para el proyecto, según la investigación hecha durante el avance anterior y actual.
 
+\insertimage[\label{img:arquitectura}]{assets/Modelo Arquitectura.png}{width=\textwidth}{Modelo de arquitectura propuesto.}
+
+Durante el avance anterior se dibujó similitudes entre esta arquitectura y un sistema de BI (Revisar el capítulo \ref{sec:similitud_bi}, parte de los anexos). En la figura \ref{img:arquitectura} el paralelo se crea de la siguiente forma:
+
+\begin{itemize}
+  \item El proceso de ETL es hecho entre Filebeats, Monitorbeats (para la parte de extracción) y Logstash (Para la parte de transformación y carga).
+  \item El \quotes{Data Warehouse} es creado y atendido por Elastic Search, quien cumple el rol de pieza fundamental de la arquitectura.
+  \item El rol de visualización es cumplido por la herramienta Kibana.
+\end{itemize}
+
+De esta arquitectura, el rol más importante es cumplido por Elastic Search, pues es la pieza maś difícil de reemplazar por una herramienta alternativa o solución personalizada. 
+
+La solución establecida es descrita a fondo en la sección \ref{sec:stack_elk}. En particular, se discute el rol de Elasticsearch como punto central del stack, así como los roles y beneficios del resto de integrantes de esta arquitectura.
 
 \clearpage

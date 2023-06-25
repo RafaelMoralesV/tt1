@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2023-06-25T03:27:04.926Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0" etag="5LdQqWaIQQCotmgAPGSr" version="21.5.0" type="device">
+  <diagram name="Page-1" id="Lq59yyKUrJJSvt6qtFyq">
+    <mxGraphModel dx="810" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-4" target="2Ws7wSExXgNvIVa7oPXZ-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.1;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-4" target="2Ws7wSExXgNvIVa7oPXZ-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-4" value="Servidores UTEM" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="110" width="200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-11" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-4" vertex="1">
+          <mxGeometry x="78.69999999999999" y="40" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-12" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-4" vertex="1">
+          <mxGeometry x="19.999999999999986" y="40" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-13" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-4" vertex="1">
+          <mxGeometry x="49.999999999999986" y="110" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-14" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-4" vertex="1">
+          <mxGeometry x="140" y="40" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-1" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-4" vertex="1">
+          <mxGeometry x="110.00000000000001" y="110" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-17" target="2Ws7wSExXgNvIVa7oPXZ-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-17" value="Bases de datos de Desarrollo" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="324.5" width="200" height="165.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-16" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-17" vertex="1">
+          <mxGeometry x="20" y="45.5" width="50" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-19" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-17" vertex="1">
+          <mxGeometry x="78" y="45.5" width="50" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-20" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-17" vertex="1">
+          <mxGeometry x="135" y="45.5" width="50" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-21" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-17" vertex="1">
+          <mxGeometry x="40" y="105.5" width="50" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-22" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/databases.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-17" vertex="1">
+          <mxGeometry x="110" y="105.5" width="50" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-24" value="Servidor de Logs" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="110" width="250" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s2YXPNkwUtAM_d10ZqQG-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="2Ws7wSExXgNvIVa7oPXZ-24" source="2Ws7wSExXgNvIVa7oPXZ-28" target="2Ws7wSExXgNvIVa7oPXZ-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="170" />
+              <mxPoint x="125" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-28" value="API Rest" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn.cdnlogo.com/logos/e/35/elastic-elasticsearch.svg;fontSize=11;strokeWidth=2;" parent="2Ws7wSExXgNvIVa7oPXZ-24" vertex="1">
+          <mxGeometry x="170" y="70.25" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="2Ws7wSExXgNvIVa7oPXZ-24" source="2Ws7wSExXgNvIVa7oPXZ-32" target="2Ws7wSExXgNvIVa7oPXZ-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-32" value="Transformación" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://brandslogos.com/wp-content/uploads/thumbs/elastic-logstash-logo-vector.svg;" parent="2Ws7wSExXgNvIVa7oPXZ-24" vertex="1">
+          <mxGeometry x="70" y="70" width="60.25" height="60.25" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-38" value="Visualización" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://seeklogo.com/images/K/kibana-logo-3CB40921E7-seeklogo.com.png;" parent="2Ws7wSExXgNvIVa7oPXZ-24" vertex="1">
+          <mxGeometry x="109.93000000000005" y="200" width="30.13" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-25" target="2Ws7wSExXgNvIVa7oPXZ-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="239.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="195" />
+              <mxPoint x="480" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-25" value="Filebeat&#xa;Monitorbeat" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://brandslogos.com/wp-content/uploads/images/elastic-beats-logo-vector.svg;" parent="1" vertex="1">
+          <mxGeometry x="375" y="170" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-29" target="2Ws7wSExXgNvIVa7oPXZ-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="365" />
+              <mxPoint x="450" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-29" value="Filebeat" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://brandslogos.com/wp-content/uploads/images/elastic-beats-logo-vector.svg;" parent="1" vertex="1">
+          <mxGeometry x="375" y="340" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s2YXPNkwUtAM_d10ZqQG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-34" target="2Ws7wSExXgNvIVa7oPXZ-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="493" y="390" />
+              <mxPoint x="565" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-34" value="Infrastructura" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" parent="1" vertex="1">
+          <mxGeometry x="470" y="420" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="s2YXPNkwUtAM_d10ZqQG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-35" target="2Ws7wSExXgNvIVa7oPXZ-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-35" value="Dev" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" parent="1" vertex="1">
+          <mxGeometry x="542.2" y="420" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="s2YXPNkwUtAM_d10ZqQG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="2Ws7wSExXgNvIVa7oPXZ-36" target="2Ws7wSExXgNvIVa7oPXZ-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="643" y="390" />
+              <mxPoint x="565" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2Ws7wSExXgNvIVa7oPXZ-36" value="Gerencia" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" parent="1" vertex="1">
+          <mxGeometry x="620" y="420" width="45.6" height="61.800000000000004" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
