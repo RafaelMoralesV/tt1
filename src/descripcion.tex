@@ -17,4 +17,12 @@ De esta arquitectura, el rol más importante es cumplido por Elastic Search, pue
 
 La solución establecida es descrita a fondo en la sección \ref{sec:stack_elk}. En particular, se discute el rol de Elasticsearch como punto central del stack, así como los roles y beneficios del resto de integrantes de esta arquitectura.
 
+Ahora, ¿Por qué se ha preferido el stack Elastic por sobre otras alternativas? La razón principal es por que está diseñado para funcionar entre sí, lo que hace el valor adquirible en relación a la cantidad de labor necesaria para hacerlo funcionar está en ordenes de magnitud por encima de las alternativas.
+
+Razones secundarias incluyen la capacidad de escalar horizontalmente que tiene Elasticsearch, lo que lo hace una alternativa de solución de mejor mantención que otras opciones con peor escalabilidad, asegurando que siempre exista una alternativa simple de expansión en caso de que la solución esté \quotes{quedando corta} en términos de potencia, por ejemplo.
+
+Adicionalmente, este stack es extendible via SDK's y API's provistas por el mismo, junto con variedad de plugins e integración de tecnologías varias, como NGINX, que es una de las tecnologías utilizada por SISEI dentro de los sistemas de la universidad.
+
+Finalmente, la comunidad y soporte que tiene este stack es amplia y activa; El ecosistema provisto es sólido, la documentación es detallada, los recursos de aprendizaje son variados, y el interés de la comunidad ha sido mostrado en la creación de varios plugins adicionales, que aumentan la capacidad de este stack en diversas medidas.
+
 \clearpage
