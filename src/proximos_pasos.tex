@@ -1,12 +1,13 @@
 \section{Proximos pasos:}
-% TODO: Actualizar proximos pasos
 
-De acuerdo a lo propuesto en el cronograma inicial (ver tabla \ref{tab:cronograme}), la segunda etapa del proyecto está en principio completa, pues el diseño inicial de la solución fue propuesto antes de los requerimientos. Se espera que la toma de requerimientos más detallada afecte a este planteamiento inicial en algún grado, junto con la conexión a las bases de datos con los logs en primera mano.
+De acuerdo a lo propuesto con el cronograma inicial (ver tabla \ref{tab:cronograma}), el hito de entrega de informe de Avance II corresponde con la segunda etapa del proyecto (Ver tabla de hitos [\ref{tab:hitos}] y tabla de etapas del proyecto [\ref{tab:etapas}]) de Diseño inicial de la solución. Adicionalmente, se completó la etapa de Análisis y levantamiento de requerimientos.
 
-A día de hoy, ya se posee acceso a la VPN de los servidores de desarrollo de SISEI, y acceso SSH a las máquinas de desarrollo de AMANDA y SIGA. Se necesita un punto de acceso a los motores de bases de datos para continuar.
+La siguiente etapa corresponde a una etapa de desarrollo incremental de la solución; con esto me refiero a que se trabajará en un ambiente independiente de máquinas virtuales Linux que modelen la arquitectura de SISEI, donde se pueda hacer pruebas de concepto incrementalmente más funcionales, documentadas y analizadas en conjunto para ver cómo éstas están cumpliendo con los requerimientos obtenidos en estas primeras etapas.
 
-Las siguientes tareas, entonces, corresponderían a una verificación junto con Sebastián Vega, y otros stakeholders de SISEI, para tener una toma de requerimientos más detallada y robusta, a fin de conseguir cualquier requisito funcional y no funcional que no se haya pensado en un inicio, junto con cualquier restricción que no se haya visto en esta primera etapa y que pueda afectar al primer planteamiento de tecnologías.
+El paso más próximo será la creación de máquinas virtuales y primera prueba de concepto, que corresponde a poder conectar los componentes del stack elastic en este entorno de pruebas y obtener una respuesta que revele las primeras fuentes de información.
 
-El propósito final de esta etapa será, entonces, verificar la viabilidad del stack ELK como solución para esta problemática, junto con la verificación de herramientas adicionales que puedan complementarlo, y ajustar el plan inicial según corresponda.
+A día de hoy, se tiene acceso a copias de los logs de infraestructura, y se está en espera de la creación de un usuario para la base de datos de desarrollo. Una vez obtenidas las credenciales, se exportarán copias a estas máquinas virtuales con el fin de completar del todo la prueba de concepto de conexión y viabilidad de componentes.
+
+Se espera que esta etapa de desarrollo dure hasta el quinto hito del proyecto, correspondiente a la entrega del informe de Avance I para Trabajo de Título II.
 
 \clearpage
